@@ -1,11 +1,14 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        // "es2021": true
     },
     "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
+        "airbnb",
+        "airbnb/hooks",
+        // "airbnb-base",
+        // "eslint:recommended",
+        // "plugin:react/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
