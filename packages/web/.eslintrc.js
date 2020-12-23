@@ -21,6 +21,7 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "indent": "off"
+        "indent": "off",
+        "arrow-body-style": ["error", "as-needed"]
     }
 };
