@@ -1,15 +1,13 @@
-export default {
+module.exports = {
   "env": {
     "browser": true,
     // "es2021": true
   },
   "extends": [
+    "plugin:react/recommended",
     "airbnb",
-    "airbnb/hooks",
-    "airbnb-base",
-    "eslint:recommended",
     "prettier",
-    // "plugin:react/recommended"
+    "prettier/react"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -23,6 +21,9 @@ export default {
     "prettier"
   ],
   "rules": {
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+
   }
 };
+

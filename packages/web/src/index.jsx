@@ -1,29 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { createStore } from 'redux';
+
 import { Provider } from 'react-redux';
-import rootReducer from './reducers';
+import Store from './store';
 
 // App Import
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-/* eslint-disable no-underscore-dangle */
-const store = createStore(
-  rootReducer /* preloadedState, */,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
-);
-/* eslint-enable */
-
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={Store}>
       <App />
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
