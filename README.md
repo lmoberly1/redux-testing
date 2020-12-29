@@ -1,1 +1,1 @@
-# Video performance platform for cheer and dance market
+# Redux testing
